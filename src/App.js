@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import axios from "axios";
+
 import { fetchWeather, error, URL, API_KEY } from "./api/fetchWeather";
 import { fetchVenues } from "./api/fetchVenues";
 
@@ -32,6 +32,7 @@ const App = () => {
           APPID: API_KEY,
         },
       });
+
       const currentCity = data.name;
       setQuery(currentCity);
       setIsLoading(true);
