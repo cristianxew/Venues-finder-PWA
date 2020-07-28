@@ -1,0 +1,41 @@
+$font-color: #c4c3bc;
+
+.Option-container {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .categories {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .list-categories {
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0.5rem;
+    .option-bottom {
+      border: transparent;
+      background: transparent;
+      color: inherit;
+      font-size: 1rem;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: ease 0.4s;
+      outline-style: none;
+
+      &.active,
+      &:hover {
+        background-color: #246428;
+        color: $font-color;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+$green: #246428;
+$font-color: #c4c3bc;
+$blue: #2d2859;
+
+.main-header {
+  .search-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .nav {
+      color: $green;
+      padding: 0 0 1rem;
+      text-transform: uppercase;
+      width: -webkit-fill-available;
+      text-align: center;
+      background: $blue;
+      padding: 0.8rem;
+
+      h2 {
+        margin: 0;
+      }
+    }
+    .search-box {
+      display: inherit;
+      align-items: inherit;
+      flex-direction: inherit;
+      width: 80%;
+      padding: 2rem 0 0;
+      .search-input {
+        text-align: center;
+        outline: none;
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 2rem;
+        background: $font-color;
+        width: 50%;
+      }
+    }
+  }
+}

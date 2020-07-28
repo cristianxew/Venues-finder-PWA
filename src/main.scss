@@ -1,0 +1,55 @@
+$heading-font: "Domine", serif;
+$body-font: "Roboto", sans-serif;
+
+$green: #246428;
+$blu-dark: #204051;
+$blue: #2d2859;
+$ligth-blu: #84a9ac;
+$font-color: #c4c3bc;
+
+html,
+body,
+#root {
+  font-family: $body-font;
+  background: $blu-dark;
+  color: $font-color;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+h2,
+h4 {
+  color: $ligth-blu;
+}
+
+.main-container {
+  min-height: 100vh;
+  position: relative;
+  box-sizing: inherit;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: $blue;
+  color: $font-color;
+  .footer-text {
+    margin: 0;
+    font-size: 12px;
+  }
+}
